@@ -1,0 +1,80 @@
+:root {
+  --bg-body: #fff;
+  --bg-switcher: #000;
+}
+
+.dark {
+  --bg-body: #292C35;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  align-items: center;
+  background: var(--bg-body);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.switcher {
+  align-items: center;
+  display: flex;
+  background: var(--bg-switcher);
+  border-radius: 50px;
+  justify-content: space-evenly;
+  padding: 8px;
+  position: relative;
+  height: 100px;
+  width: 235px;
+}
+
+.switcher_icon-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.switcher_icon {
+  height: 94px;
+  width: 94px;
+}
+
+.outlet {
+  animation: slide-in 0.2 forwards;
+  display: inline-block;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  right: 8px;
+  height: 86px;
+  width: 86px;
+}
+
+.dark .outlet {
+  animation: slide-back 0.2 forwards;
+}
+
+@keyframes slide-in {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slide-back {
+  from  {
+    left: 85%;
+  }
+  to {
+    left: 0;
+  }
+}
