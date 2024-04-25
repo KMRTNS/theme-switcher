@@ -24,9 +24,9 @@
 
 .switcher {
   align-items: center;
-  display: flex;
   background: var(--bg-switcher);
   border-radius: 50px;
+  display: flex;
   justify-content: space-evenly;
   padding: 8px;
   position: relative;
@@ -48,9 +48,10 @@
 
 .outlet {
   animation: slide-in 0.2 forwards;
-  display: inline-block;
-  border-radius: 50%;
   background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
   position: absolute;
   right: 8px;
   height: 86px;
